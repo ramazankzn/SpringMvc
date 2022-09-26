@@ -9,15 +9,13 @@ import java.util.List;
 @Component
 public class PersonDAO {
     private static int PEOPLE_COUNT;
-    private List<Person> people;
+    private List<Person> people = new ArrayList<>();;
 
     {
-        people = new ArrayList<>();
-
-        people.add(new Person(++PEOPLE_COUNT, "Tom"));
-        people.add(new Person(++PEOPLE_COUNT, "Bob"));
-        people.add(new Person(++PEOPLE_COUNT, "Mike"));
-        people.add(new Person(++PEOPLE_COUNT, "Katy"));
+        people.add(new Person(++PEOPLE_COUNT, "Rick"));
+        people.add(new Person(++PEOPLE_COUNT, "Ram"));
+        people.add(new Person(++PEOPLE_COUNT, "Serg"));
+        people.add(new Person(++PEOPLE_COUNT, "Rust"));
     }
 
     public List<Person> index() {
