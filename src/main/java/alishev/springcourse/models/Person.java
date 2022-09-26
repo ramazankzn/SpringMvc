@@ -1,6 +1,9 @@
 package alishev.springcourse.models;
 
 public class Person {
+    public Person() {
+    }
+
     private int id;
     private String name;
 
@@ -24,4 +27,5 @@ public class Person {
     public void setName(String name) {
         this.name = name;
     }
+
 }
